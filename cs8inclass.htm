@@ -1,0 +1,93 @@
+﻿<!DOCTYPE html>
+<html>
+
+<head lang="en">
+<meta http-equiv="content-type" content="text/html; charset=UTF-8"> 
+
+    <style>
+        .topnav {
+            background-color: bisque;
+            overflow: hidden;
+            font-family: Lucida Handwriting; 
+        }
+
+        .topnav a {
+            float: left;
+            color: black;
+            text-align: center;
+            padding: 14px 40px;
+            text-decoration: none;
+            font-size: 1em;
+        }
+
+        .active {
+             background-color: green;
+             color: white;
+        }
+
+        .dropdown {
+            float: left;
+            overflow: hidden;
+        }
+
+        .dropdown .dropdownbutton {
+            font-size: 1em;
+            border: none;
+            outline: none;
+            color: black;
+            padding: 14px 40px;
+            font-family: inherit;
+            background-color: inherit;
+            margin: 0;
+        }
+
+        .dropdowncontent {
+            position: absolute;
+            display: none;
+            background-color: white;
+            z-index: 1;
+        }
+
+        .dropdown:hover .dropdowncontent {
+            display: block;
+        }
+
+        .dropdowncontent a {
+            float: none;
+            display: block;
+            color: black;
+            padding: 12px 16px;
+            text-decoration: none;
+            text-align: left; 
+        }
+
+        .topnav a:hover, .dropdown:hover .dropdownbuton {
+            background-color: gray;
+            color: black;
+        }
+
+        .dropdowncontent a:hover {
+            background-color: lightgray;
+            color: black;
+
+
+        }
+    </style>
+
+    <script>
+        function myFunction() {
+            var x = document.getElementById("mytopnav");
+            if (x.className === "topnav") {
+                x.className += "responsive";
+            } else {
+                x.className = "topnav";
+            }
+        }
+        <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
+
+
+    </script>
+
+
+
+</head>
