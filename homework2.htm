@@ -14,7 +14,6 @@
 		}
 
 		form {
-			background-color: white;
 			padding: 40px;
 			text-align: center;
 			
@@ -29,6 +28,79 @@
 			
 		}
 
+		th, td {
+			border: 2px solid black;
+			padding: 10px;
+			text-align: center;
+			
+		}
+
+		th {
+			font-weight: bold;
+			
+		}
+
+		td img {
+			width: 45%
+			
+		}
+
+		table caption {
+			font-family: 'Lucida Grande', sans-serif;
+			font-size: 2em;
+			font-weight: bold;
+			color: navy;
+			margin-bottom: 20px;
+			
+		}
+
+		.product-image {
+			width: 35%;
+			
+		}
+
+		.product-price, .product-selection, .product-quality {
+			width: 20%;
+			
+			
+		}
+
+		.product-selection {
+			width: 25%;
+			
+			
+		}
+
+		p {
+			text-align: center;
+			margin-top: 20px;
+			
+			
+		}
+
+		button {
+			height: 30px;
+			padding: 5px 10px;
+			border: none;
+			font-size: 16px;
+			cursor: pointer;
+			
+			
+		}
+
+		.submit-btn {
+			background-color: green;
+			color: white;
+			
+		}
+
+		.clear-btn {
+			background-color: yellow;
+			
+			
+		}
+
+
 	
 	</style>
 	
@@ -39,6 +111,41 @@
   </head>
 
   <body>
+	<form>
+		<table>
+			<caption>Catalog of Sweaters</caption>
+			<tr>
+				<th>Product Image</th>
+				<th>Product Price</th>
+				<th>Product Quantity</th>
+			</tr>
+			<tr>
+				<td class="product-image"><img src="redsweater.jpg" alt="Red Sweater"></td>
+				<td class="product-price">$35.00</td>
+				<td class="product-selection"><input type="radio" name="sweater" value="Red Sweater"> Red Sweater</td>
+				<td class="product-quantity"><input type="text" name="quantity_red"></td>
+			</tr>
+			<tr>
+				<td class="product-image"><img src="bluesweater.jpg" alt="Blue Sweater"></td>
+				<td class="product-price">$45.00</td>
+				<td class="product-selection"><input type="radio" name="sweater" value="Blue Sweater"> Blue Sweater</td>
+				<td class="product-quantity"><input type="text" name="quantity_blue"></td>
+
+			</tr>
+			<tr>
+				<td class="product-image"><img src="whitesweater.jpg" alt="White Sweater"></td>
+				<td class="product-price">$30.00</td>
+				<td class="product-selection"><input type="radio" name="sweater" value="White Sweater"> White Sweater</td>
+				<td class="product-quantity"><input type="text" name="quantity_white"></td>
+			</tr>
+		</table>
+
+		<p>
+			<button type="submit" class="submit-btn">Submit Selections</button>
+			<button type="reset" class="clear-btn">Clear Selections</button>
+		</p>
+
+	</form>
 	<!-- Your HTML goes here -->
 
 	
