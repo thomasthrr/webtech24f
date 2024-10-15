@@ -2,34 +2,109 @@
 
 <html lang="en"> 
 
-  <head>
-	<meta http-equiv="content-type" content="text/html; charset=utf-8" /> 
-	<title>Thomas's first web page</title>
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Reach Out to Us - Portalys </title>
+	<link rel="stylesheet" href="hpstyles.css">
+</head>
 
-	<style>
-	/* Your styles go here */
-	
-	
-	</style>
-	
-	
-	
-	
-	
-  </head>
+<body>
+	<header>
+		<nav>
+			<ul>
+				<li><a href="index.htm">Home</a></li>
+				<li><a href="aboutus.htm">About Us</a></li>
+				<li><a href="contactus.htm">Contact Us</a></li>
+			</ul>
+		</nav>
+	</header>
 
-  <body>
-	<!-- Your HTML goes here -->
-	<h1>All about Thomas</h1>
-	<h3> 375 Market Street <br/>
-		Brighton, MA 02135  <br>
-		857-391-4517
-	</h3>
-	<h4>About Me:</h4>
+	<main>
+		<section id="contacts">
+			<h1>Contact Us</h1>
+			<p>If you have any questions, inquiries, or feedback, please fill in the form below, and we'll get back to you as soon as possible</p>
 
-    <hr/>
+			<form action="submit_form.php" method="POST">
+				<div class="form-group">
+					<label for="name">Name:</label>
+					<input type="text" id="name" name="name" required>
+				</div>
+
+				<div class="form-group">
+					<label for="email">Email:</label>
+					<input type="email" id="email" name="email" required>
+				</div>
+
+				<div class="form-group">
+					<label for="phone">Phone Number:</label>
+					<input type="tel" id="phone" name="phone">
+				</div>
+
+				<div class="form-group">
+					<label for="reason">Reason for Contacting Us:</label>
+					<select id="reason" name="reason">
+						<option value="general">General Inquiry</option>
+						<option value="partnership"> Partnership Opportunities</option>
+						<option value="support">Customer Support</option>
+						<option value="other">Other</option>
+					</select>
+				</div>
+
+				<div class="form-group">
+					<label>Are you an event organizer</label><br> 
+					<input type="radio" id="yes" name="organizer" value="yes">
+					<label for="yes">Yes</label><br>
+					<input type="radio" id="no" name="organizer" value="no">
+					<label for="no">No</label>
+				</div>
+
+				<div class="form-group">
+					<label for="services">What services are you interested in?</label><br>
+					<input type="checkbox" id="ticketing" name="services" value="ticketing">
+					<label for="ticketing">Event Ticketing</label><br>
+					<input type="checkbox" id="promotion" name="services" value="promotion">
+					<label for="promotion"> Event Promotion </label><br>
+					<input type="checkbox" id="analytics" name="services" value="analytics">
+					<label for="analytics">Event Analytics</label><br>
+				</div>
+
+				<div class="form-group">
+					<label for="message">Your Message:</label>
+					<textarea id="message" name="message" rows="5" required></textarea>
+				</div>
+
+				<div class="form-group">
+					<button type="submit">Submit</button>
+				</div>
+			</form>
+		</section>
+	</main>
+
+	<footer>
+		<div class="footer-content">
+			<p> © 2024 Portalys. All rights reserved</p>
+			<div class="footer-links">
+				<a href="contactus.htm">Contact Us</a>
+				<a href="aboutuss.htm">About Us</a>
+				<a href="https://portalysio.notion.site/United-States-Privacy-Policy-eb213f30516a4a239367dbad2f1b9248">Privacy Policy</a>
+				<a href="https://portalysio.notion.site/United-States-Terms-of-use-8d7db5649105423e906e06862afe9690?pvs=74">Terms of Use</a>
+				<a href="https://portalysio.notion.site/United-States-Purchase-Terms-202e5af4ed9d4d609aec3b527b132a3a?pvs=74">Purchase Terms</a>
+		</div>
+		<div class="social-icons">
+			<a href="https://www.instagram.com/portalys.io/" target="_blank">
+				<img src="instagramwhite.png" alt="Instagram" />
+			</a>
+			<a href="https://www.linkedin.com/company/portalys-io/" target="_blank">
+				<img src="linkedin.png" alt="LinkedIn" />
+			</a>
+	</div>
 		
-	
-	
-  </body>
+	</footer>
+
+
+
+
+</body>
+
 </html>
