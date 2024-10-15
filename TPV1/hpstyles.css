@@ -1,0 +1,177 @@
+body {  
+	font-family: Arial, sans-serif;
+	background-color: black;
+	color: white;
+	margin: 0;
+	padding: 0;
+	text-align: center;
+}
+
+header nav ul {  
+	list-style-type: none;
+	padding: 0;
+	
+}
+
+header nav ul li {  
+	display: inline;
+	margin: 0 20px;
+}
+
+header nav ul li a {  
+	text-decoration: none;
+	color: white;
+	font-size: 1.2em;
+	
+}
+
+header h1 {  
+	font-size: 2.5em;
+	margin-top: 30px;
+	color: white;
+}
+
+h2, h3, h4, h5, h6 {  
+	color: white;
+}
+
+p {  
+	color: white;
+}
+
+
+.container {  
+	display: inline-block;
+	width: 80%;
+	margin: 20px auto;
+}
+
+.section {  
+	display: inline-block;
+	width: 28%;
+	vertical-align: top;
+	background-color: #fff;
+	margin: 10px;
+	padding: 20px;
+	border-radius: 8px;
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.event-card img {  
+	width: 100%;
+	height: auto;
+	max-width: 300px;
+	border-radius: 5px;
+	
+}
+
+.events-grid {  
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+	gap: 20px;	
+}
+
+footer {  
+	margin-top: 30px;
+	padding: 10px;
+	background-color: #333;
+	color: #fff;
+}
+
+button {  
+	background-color: #007BFF;
+	color: white;
+	border: none;
+	padding: 10px 15px;
+	border-radius: 3px;
+	cursor: pointer;
+	transition: background-color 0.2s;
+}
+
+footer {  
+	margin-top: 30px;
+	padding: 10px;
+	background-color: #333;
+	color: #fff;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.footer-content {  
+	display: flex;
+	justify-content: space-between;
+	width: 100%;	
+}
+
+.footer-links {  
+	display: flex;
+	gap: 15px;
+	
+}
+
+.footer-links a {  
+	color: white;
+	text-decoration: none;
+	font-size: 0.9em;
+	
+}
+
+.social-icons {  
+	display: flex;
+	gap: 10px;
+
+	
+}
+
+.social-icons img {  
+	width: 24px;
+	height: 24px;
+}
+
+.social-icons img:hover {  
+	transform: scale(1.1);
+}
+
+#video {  
+	text-align: center;
+	margin-top: 40px;
+	
+}
+
+.video-wrapper {  
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin: 20% auto;
+	width: 80%;
+}
+
+video {  
+	width: 800px;
+	height: 450px;
+	max-width: 100%
+	
+}
+
+form {  
+	width: 70%;
+	margin: 20px auto;
+	padding: 20px;
+	background-color: #222;
+	border-radius: 8px;
+	
+}
+
+.form-group {  
+	margin-bottom: 15px;
+	text-align: left;
+	
+}
+
+label {  
+	display: block;
+	font-size: 1.2em;
+	color: white;	
+}
